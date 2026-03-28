@@ -1,0 +1,12 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+"config/fish/config.fish" = "~/.config/fish/config.fish"
+
+[default.variables]
+
+[settings]
+default_target_type = "automatic"
