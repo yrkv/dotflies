@@ -5,6 +5,7 @@ depends = []
 
 [default.files]
 "config/fish/config.fish" = "~/.config/fish/config.fish"
+"local/bin/program_search.sh" = "~/.local/bin/program_search.sh"
 
 [default.variables]
 
