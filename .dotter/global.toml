@@ -6,7 +6,9 @@ depends = []
 [default.files]
 "config/fish/config.fish" = "~/.config/fish/config.fish"
 "config/niri/config.kdl" = "~/.config/niri/config.kdl"
+"config/nvim" = "~/.config/nvim"
 "local/bin/program_search.sh" = "~/.local/bin/program_search.sh"
+"local/bin/open_terminal_here.sh" = "~/.local/bin/open_terminal_here.sh"
 
 [default.variables]
 
