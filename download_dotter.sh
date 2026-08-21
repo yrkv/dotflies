@@ -8,7 +8,7 @@ ASSET="dotter-linux-x64-musl"
 #wget "https://github.com/$REPO/releases/download/$LATEST_TAG/$ASSET"
 
 # Instead let's just pin the version to v0.13.4 and manually update in the future.
-TAG="v0.13.4"
+TAG="v0.13.5"
 wget "https://github.com/$REPO/releases/download/$TAG/$ASSET" -O dotter
 chmod +x dotter
 
