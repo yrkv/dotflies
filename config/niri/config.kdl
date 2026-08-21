@@ -59,6 +59,12 @@ layout {
   }
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 spawn-at-startup "noctalia"
 
 hotkey-overlay { skip-at-startup; }
@@ -121,7 +127,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Z hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Shift+Z { spawn "open_terminal_here.sh"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
