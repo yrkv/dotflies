@@ -5,6 +5,16 @@ pid="$(niri msg -j focused-window | jq '.pid')"
 
 ppid="$(ps -o pid= --ppid "$pid" | xargs)"
 
-alacritty --working-directory "$(readlink "/proc/$ppid/cwd")"
+cwd="$(readlink "/proc/$ppid/cwd")"
+
+case "$cwd" in
+    /var/home|/var/home/*)
+        cwd="/home${cwd#/var/home}"
+        ;;
+esac
+
+cd "$cwd"
+alacritty --working-directory "$cwd"
+#alacritty --working-directory "/home/yegor/.local/bin"
 #foot --working-directory="$(readlink "/proc/$ppid/cwd")"
 
