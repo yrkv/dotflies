@@ -1,6 +1,6 @@
 
 -- keep minimal config as vimscript -- allows me to use it for vim too
-vim.cmd('source ~/.config/nvim/vim/init.vim')
+vim.cmd('source ~/.config/vim/vimrc')
 
 require('plugins.lualine')
 require('plugins.gitsigns')
