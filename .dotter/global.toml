@@ -4,12 +4,12 @@
 depends = []
 
 [default.files]
-"config/fish/config.fish" = "~/.config/fish/config.fish"
-"config/niri/config.kdl" = "~/.config/niri/config.kdl"
-"config/nvim" = "~/.config/nvim"
+"local/bin/" = "~/.local/bin/"
+"config/fish/" = "~/.config/fish/"
+"config/nvim/" = "~/.config/nvim/"
 "config/vim/vimrc" = "~/.config/vim/vimrc"
-"local/bin/program_search.sh" = "~/.local/bin/program_search.sh"
-"local/bin/open_terminal_here.sh" = "~/.local/bin/open_terminal_here.sh"
+"config/niri/config.kdl" = "~/.config/niri/config.kdl"
+"config/alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
 
 [default.variables]
 
