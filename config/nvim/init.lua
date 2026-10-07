@@ -5,6 +5,7 @@ vim.cmd('source ~/.config/vim/vimrc')
 require('plugins.lualine')
 require('plugins.gitsigns')
 require('plugins.sonokai')
+require('plugins.typst')
 
 
 vim.cmd([[
