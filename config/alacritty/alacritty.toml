@@ -3,3 +3,19 @@
 
 size = 10
 
+
+[keyboard]
+
+bindings = [
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+]
