@@ -24,6 +24,10 @@ input {
   focus-follows-mouse max-scroll-amount="5%"
 }
 
+output "DP-1" {
+  scale 2
+}
+
 output "eDP-1" {
   mode "2256x1504@59.999"
   scale 1.5
@@ -52,6 +56,14 @@ layout {
 
   border { off; }
   shadow { off; }
+
+  tab-indicator {
+    place-within-column
+    width 2
+    gap 4
+    gaps-between-tabs 4
+    //corner-radius 8
+  }
 
   // extra outer gaps, as needed.
   struts {
@@ -168,16 +180,16 @@ binds {
     Mod+Q repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    Mod+Down  { focus-window-down-or-top; }
+    Mod+Up    { focus-window-up-or-bottom; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
+    Mod+J     { focus-window-down-or-top; }
+    Mod+K     { focus-window-up-or-bottom; }
     Mod+L     { focus-column-right; }
     Mod+A     { focus-column-left; }
-    Mod+S     { focus-window-down; }
-    Mod+W     { focus-window-up; }
+    Mod+S     { focus-window-down-or-top; }
+    Mod+W     { focus-window-up-or-bottom; }
     Mod+D     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
@@ -369,7 +381,7 @@ binds {
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
     // rather than stacked on top of each other.
-    // Mod+W { toggle-column-tabbed-display; }
+    Mod+T { toggle-column-tabbed-display; }
 
     // Actions to switch layouts.
     // Note: if you uncomment these, make sure you do NOT have
