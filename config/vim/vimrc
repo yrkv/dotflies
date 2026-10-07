@@ -8,6 +8,8 @@ set shiftwidth=2
 set smartindent
 set expandtab
 
+set textwidth=85
+
 " Highlight search results and start before submitting
 set hlsearch
 set incsearch
