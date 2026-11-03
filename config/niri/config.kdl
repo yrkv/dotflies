@@ -111,6 +111,7 @@ window-rule {
   match app-id=r#"^org\.keepassxc\.KeePassXC$"#
   match app-id=r#"^org\.gnome\.World\.Secrets$"#
   match app-id=r#"^vesktop$"#
+  match app-id=r#"^dev.vencord.Vesktop$"#
   match app-id=r#"^Slack$"#
   match app-id=r#"firefox$"# title="Mozilla Firefox Private Browsing"
 
