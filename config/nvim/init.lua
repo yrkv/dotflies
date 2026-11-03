@@ -7,6 +7,9 @@ require('plugins.gitsigns')
 require('plugins.sonokai')
 require('plugins.typst')
 
+vim.pack.add({
+  'https://github.com/HakonHarnes/img-clip.nvim',
+})
 
 vim.cmd([[
 let g:python_indent = {}
