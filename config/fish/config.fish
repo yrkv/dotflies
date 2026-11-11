@@ -1,5 +1,7 @@
 set fish_greeting # disable greeting
 
+export UV_PYTHON_PREFERENCE=only-managed
+
 if not contains ~/.local/bin $PATH
   set -gx PATH ~/.local/bin $PATH
 end
@@ -13,3 +15,4 @@ if status is-interactive
     source $file
   end
 end
+
