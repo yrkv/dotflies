@@ -6,6 +6,7 @@ depends = []
 [default.files]
 "local/bin/" = "~/.local/bin/"
 "config/fish/" = "~/.config/fish/"
+"config/git/" = "~/.config/git/"
 "config/nvim/" = "~/.config/nvim/"
 "config/vim/vimrc" = "~/.config/vim/vimrc"
 "config/niri/config.kdl" = "~/.config/niri/config.kdl"
